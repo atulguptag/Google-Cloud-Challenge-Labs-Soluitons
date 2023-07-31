@@ -31,7 +31,7 @@ with deaths_by_states as (
 SELECT subregion1_name as state, sum(cumulative_deceased) as death_count 
 FROM `bigquery-public-data.covid19_open_data.covid19_open_data` where country_name="United States of America" and date='2020-06-25' and subregion1_name is NOT NULL 
 group by subregion1_name ) 
-select count(*) as count_of_states from deaths_by_states where death_count > `Enter_states`
+select count(*) as count_of_states from deaths_by_states where death_count > Enter_states
 ```
 
 
@@ -41,7 +41,7 @@ select count(*) as count_of_states from deaths_by_states where death_count > `En
 SELECT * FROM ( 
 SELECT subregion1_name as state, sum(cumulative_confirmed) as total_confirmed_cases 
 FROM `bigquery-public-data.covid19_open_data.covid19_open_data` WHERE country_code="US" AND date='2020-06-25' AND subregion1_name is NOT NULL 
-GROUP BY subregion1_name ORDER BY total_confirmed_cases DESC ) WHERE total_confirmed_cases > `Enter_confirmed_cases_number`
+GROUP BY subregion1_name ORDER BY total_confirmed_cases DESC ) WHERE total_confirmed_cases > Enter_confirmed_cases_number
 ```
 
 
@@ -63,7 +63,7 @@ FROM
   `bigquery-public-data.covid19_open_data.covid19_open_data`
 WHERE
  country_name = 'Italy'
- AND cumulative_deceased > total_number
+ AND cumulative_deceased > Enter_Total_Number
 ORDER BY date
 LIMIT 1
 ```
@@ -139,7 +139,7 @@ WHERE
   FROM
     us_previous_day_comparison
   WHERE
-    percentage_increase > <Enter % here>
+    percentage_increase > Enter_Percentage_Here
 ```
 
 
@@ -173,7 +173,7 @@ FROM
 WHERE
    cases > 50000
 ORDER BY recovery_rate DESC
-LIMIT 'put your limit here'
+LIMIT Enter_Limit_Here
 ```
 
 
