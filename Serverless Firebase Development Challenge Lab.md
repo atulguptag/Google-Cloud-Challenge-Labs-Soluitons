@@ -14,8 +14,8 @@ git clone https://github.com/rosera/pet-theory.git
 
 
 * We have to Create a Firestore database.
-
-![Alt text](.gitignore/img1.png)
+![Alt text](.gitignore/img.jpg)
+* Click on Search > Firestore > Choose Native Store > Add location Nam5 (United States)
 
 ## Task - 2: Firestore Database Populate
 
