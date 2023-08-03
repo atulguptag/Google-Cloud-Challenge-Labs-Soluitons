@@ -31,10 +31,10 @@ node index.js netflix_titles_original.csv
 cd ~/pet-theory/lab06/firebase-rest-api/solution-01
 npm install
 gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/rest-api:0.1
-gcloud beta run deploy netflix-dataset-service --image gcr.io/$GOOGLE_CLOUD_PROJECT/rest-api:0.1 --allow-unauthenticated
+gcloud beta run deploy <Dataset_Service_Name> --image gcr.io/$GOOGLE_CLOUD_PROJECT/rest-api:0.1 --allow-unauthenticated
 ```
 
-* Choose `1` and `us-central1`
+* Choose `29` and `us-central1`
 
 
 ## Task - 4: Cloud Build Rest API Production
@@ -43,7 +43,7 @@ gcloud beta run deploy netflix-dataset-service --image gcr.io/$GOOGLE_CLOUD_PROJ
 cd ~/pet-theory/lab06/firebase-rest-api/solution-02
 npm install
 gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/rest-api:0.2
-gcloud beta run deploy netflix-dataset-service --image gcr.io/$GOOGLE_CLOUD_PROJECT/rest-api:0.2 --allow-unauthenticated
+gcloud beta run deploy <Dataset_Service_Name> --image gcr.io/$GOOGLE_CLOUD_PROJECT/rest-api:0.2 --allow-unauthenticated
 ```
 
 ### Goto `Cloud Run` and Click `Netflix-Dataset-Service` then copy *the url*.
@@ -61,19 +61,19 @@ nano app.js # comment line 3 and uncomment line 4, insert your netflix-dataset-s
 npm install
 cd ~/pet-theory/lab06/firebase-frontend
 gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-staging:0.1
-gcloud beta run deploy frontend-staging-service --image gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-staging:0.1
+gcloud beta run deploy <Frontend Staging Service Name> --image gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-staging:0.1
 ```
 
-* Choose `1` and `us-central1`
+* Choose `29` and `us-central1`
 
 
 ## Task - 6: Cloud Build Frontend Production
 
 ```cmd
 gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-production:0.1
-gcloud beta run deploy frontend-production-service --image gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-production:0.1
+gcloud beta run deploy <Frontend Staging Service Name> --image gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-production:0.1
 ```
 
-* Choose `1` and `us-central1`
+* Choose `29` and `us-central1`
 
 # Congratulations🎉! You're all done with this Challenge lab.
