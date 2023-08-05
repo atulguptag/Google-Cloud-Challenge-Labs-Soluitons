@@ -52,7 +52,7 @@ If asking choose y/n then press "y", and then hit Enter.
 
 * Now, copy the username and password for app_admin user, we need this to login into bastion vm.
 
-## Manaul Steps (*Necessary to perform)
+## Manual Steps (*Necessary to perform)
 
 * Click on `Add roles and features`.
 
