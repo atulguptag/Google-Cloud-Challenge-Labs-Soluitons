@@ -13,7 +13,7 @@ export Zone=<YOUR_ZONE>
 ```cmd
 gsutil mb -b off gs://$DEVSHELL_PROJECT_ID
 
-wget https://github.com/atulguptag/Google-Cloud-Challenge-Labs-Soluitons/raw/main/Deploy a Compute Instance with a Remote Startup Script/Deploy%20a%20Compute%20Instance%20with%20a%20Remote%20Startup%20Script/resources-install-web.sh
+wget https://raw.githubusercontent.com/atulguptag/Google-Cloud-Challenge-Labs-Soluitons/main/Deploy%20a%20Compute%20Instance%20with%20a%20Remote%20Startup%20Script/resources-install-web.sh
 
 gsutil cp resources-install-web.sh gs://$DEVSHELL_PROJECT_ID
 ```
