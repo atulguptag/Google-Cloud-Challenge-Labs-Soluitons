@@ -39,13 +39,13 @@ gcloud compute instances create vm-bastionhost --zone=$Zone --machine-type=e2-me
 ## Task 5: A Windows compute instance called vm-securehost exists that does not have a public ip-address
 
 ```cmd
-gcloud compute instances create vm-securehost --zone=$Zone --machine-type=e2-medium --network-interface=subnet=securenetwork-subnet,no-address --network-interface=subnet=default,no-address --tags=allow-rdp-traffic --image=projects/windows-cloud/global/images/windows-server-2016-dc-v20220513
+gcloud compute instances create vm-securehost --zone=$Zone --machine-type=e2-medium --network-interface=subnet=securenetwork-subnet --network-interface=subnet=default,no-address --tags=allow-rdp-traffic --image=projects/windows-cloud/global/images/windows-server-2016-dc-v20220513
 ```
 
 ## Task 6: The vm-securehost is running Microsoft IIS web server software.
 
 ```cmd
-gcloud compute reset-windows-password vm-bastionhost --user app_admin --zone $Zone
+gcloud compute reset-windows-password vm-securehost --user app_admin --zone $Zone
 ```
 
 If asking choose y/n then press "y", and then hit Enter.
