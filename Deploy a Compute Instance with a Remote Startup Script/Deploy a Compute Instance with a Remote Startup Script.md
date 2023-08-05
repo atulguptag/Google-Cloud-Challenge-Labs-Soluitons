@@ -22,7 +22,7 @@ gsutil cp resources-install-web.sh gs://$DEVSHELL_PROJECT_ID
 ## Task 2: Confirm that a compute instance has been created that has a remote startup script called install-web.sh configured
 
 ```cmd
-gcloud compute instances add-metadata lab-monitor --metadata startup-script-url=gs://$DEVSHELL_PROJECT_ID/resources-install-web.sh --zone $zone
+gcloud compute instances add-metadata lab-monitor --metadata startup-script-url=gs://$DEVSHELL_PROJECT_ID/resources-install-web.sh --zone $Zone
 ```
 
 ## Task 3: Confirm that a HTTP access firewall rule exists with tag that applies to that virtual machine
