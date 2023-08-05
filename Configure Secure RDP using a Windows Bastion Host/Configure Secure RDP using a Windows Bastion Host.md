@@ -64,3 +64,5 @@ If asking choose y/n then press "y", and then hit Enter.
 
 
 * Click *next* > *next* > *Install*
+
+# Congratulations🎉! You are done with this Challenge Lab.
