@@ -7,7 +7,7 @@
 ## Task 1: Confirm that a Google Cloud Storage bucket exists that contains a file
 
 ```cmd
-export Zone=us-central1-f
+export Zone=<YOUR_ZONE>
 ```
 
 ```cmd
