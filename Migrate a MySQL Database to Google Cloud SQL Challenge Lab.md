@@ -11,9 +11,11 @@ gcloud sql users set-password --host % root --instance wordpress --password Pass
 
 ## Task 2 & 3: Check that there is a user database on the Cloud SQL instance & Check that the blog instance is authorized to access Cloud SQL
 
+```cmd
+export BLOG_VM_EXTERNAL_IP=<YOUR_BLOG_VM_EXTERNAL_IP>
 ```
-export BLOG_VM_EXTERNAL_IP=$(gcloud compute instances describe blog --zone=us-central1-a --format='get(networkInterfaces[0].accessConfigs[0].natIP)')
 
+```cmd
 gcloud sql instances patch wordpress --authorized-networks $BLOG_VM_EXTERNAL_IP/32 --quiet
 
 gcloud compute ssh blog --zone=us-central1-a
