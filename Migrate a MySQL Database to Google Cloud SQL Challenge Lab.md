@@ -11,17 +11,33 @@ gcloud sql users set-password --host % root --instance wordpress --password Pass
 
 ## Task 2 & 3: Check that there is a user database on the Cloud SQL instance & Check that the blog instance is authorized to access Cloud SQL
 
+* Storing Zone of your blog_vm_instance into a variable
+```cmd
+export ZONE=<YOUR_BLOG_VM_INSTANCE_ZONE>
+```
+
+* Storing the BLOG_EXTERNAL_IP into a variable.
 ```cmd
 export BLOG_VM_EXTERNAL_IP=<YOUR_BLOG_VM_EXTERNAL_IP>
 ```
 
+* Authorize blog VM to your cloudSQL instance
 ```cmd
 gcloud sql instances patch wordpress --authorized-networks $BLOG_VM_EXTERNAL_IP/32 --quiet
+```
 
-gcloud compute ssh blog --zone=us-central1-a
+* Connect to blog VM using SSH
+```
+gcloud compute ssh blog --zone=$ZONE
+```
 
+* Storing CloudSQL instance IP into a variable
+```cmd
 export CLOUD_SQL_IP=$(gcloud sql instances describe wordpress --format 'value(ipAddresses.ipAddress)')
+```
 
+* Connecting to the cloudSQL instance
+```
 mysql --host=$CLOUD_SQL_IP --user=root --password=Password1*
 ```
 
@@ -31,7 +47,7 @@ mysql --host=$CLOUD_SQL_IP --user=root --password=Password1*
 CREATE DATABASE wordpress; CREATE USER 'blogadmin'@'%' IDENTIFIED BY 'Password1*'; GRANT ALL PRIVILEGES ON wordpress.* TO 'blogadmin'@'%'; FLUSH PRIVILEGES;
 ```
 
-* all done from here, let's exit
+* All done from here, let's exit
 
 ```
 exit
