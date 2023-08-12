@@ -1,7 +1,7 @@
 ## Lab Name - Serverless Firebase Development: Challenge Lab
-
 ## Lab Link - [CLICH HERE](https://www.cloudskillsboost.google/focuses/14677?parent=catalog)
 
+## [YouTube Solution Link](https://www.youtube.com/watch?v=-TefmOhEEPA)
 ### Start by executing the following commands:
 
 * Run the below Commands 
@@ -60,7 +60,7 @@ nano app.js # comment line 3 and uncomment line 4, insert your netflix-dataset-s
 npm install
 cd ~/pet-theory/lab06/firebase-frontend
 gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-staging:0.1
-gcloud beta run deploy <Frontend Staging Service Name> --image gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-staging:0.1
+gcloud beta run deploy <Cloud Run Service Name> --image gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-staging:0.1
 ```
 
 * Choose `29` and `us-central1`
@@ -70,7 +70,7 @@ gcloud beta run deploy <Frontend Staging Service Name> --image gcr.io/$GOOGLE_CL
 
 ```cmd
 gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-production:0.1
-gcloud beta run deploy <Frontend Staging Service Name> --image gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-production:0.1
+gcloud beta run deploy <Cloud Run Service Name> --image gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-production:0.1
 ```
 
 * Choose `29` and `us-central1`
