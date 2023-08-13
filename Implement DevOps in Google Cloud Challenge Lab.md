@@ -3,6 +3,7 @@
 
 Run the following commands in the Cloud Shell Terminal
 
+* Put your `Qwiklabs Student Mail ID` here.
 ```
 export EMAIL=
 ```
