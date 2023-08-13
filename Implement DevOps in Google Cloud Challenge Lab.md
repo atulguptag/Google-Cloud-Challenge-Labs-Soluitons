@@ -261,7 +261,7 @@ sed -i "s#$IMAGE#$IMAGE2#g" prod/deployment.yaml
 * Commit to master using git command
 ```
 git add .
-git commit -m "Subscribe to quicklab" 
+git commit -m "Subscribe to Atul Gupta" 
 git push -u origin master
 ```
 
