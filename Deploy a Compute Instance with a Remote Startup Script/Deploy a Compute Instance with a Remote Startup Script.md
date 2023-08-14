@@ -1,7 +1,8 @@
-# Lab Name - Deploy a Compute Instance with a Remote Startup Script
+## Lab Name - Deploy a Compute Instance with a Remote Startup Script
 
-# Lab Link - [Click Here](https://www.cloudskillsboost.google/focuses/1735?parent=catalog)
+## Lab Link - [Click Here](https://www.cloudskillsboost.google/focuses/1735?parent=catalog)
 
+## [YouTube Solution Link](https://youtu.be/6iSkXsBtFgU)
 ### Run the below commands in the cloud shell terminal.
 
 ## Task 1: Confirm that a Google Cloud Storage bucket exists that contains a file
