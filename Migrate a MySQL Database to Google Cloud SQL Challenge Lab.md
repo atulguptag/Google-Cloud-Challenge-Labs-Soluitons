@@ -1,6 +1,7 @@
 ## `Lab Link` -  *Migrate a MySQL Database to Google Cloud SQL [GSP306]*
 ## `Lab Link` - [Click Here](https://www.cloudskillsboost.google/focuses/1740?parent=catalog)
 
+## [YouTube Solution Link](https://www.youtube.com/watch?v=bxI_-W21LHE)
 ## Task 1: Check that there is a Cloud SQL instance
 
 ```cmd
