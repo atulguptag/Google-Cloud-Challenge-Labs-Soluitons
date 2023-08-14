@@ -2,6 +2,7 @@
 
 ## Lab Link - [Click Here](https://www.cloudskillsboost.google/focuses/1737?parent=catalog)
 
+## [YouTube Solution Link](https://www.youtube.com/watch?v=_mBh_nPEdBM)
 ### Run the below commands in the Cloud Shell Terminal.
 
 ```cmd
@@ -38,8 +39,16 @@ gcloud compute instances create vm-bastionhost --zone=$Zone --machine-type=e2-me
 
 ## Task 5: A Windows compute instance called vm-securehost exists that does not have a public ip-address
 
+* The below command will make an instance with `No External IP Address` which is `required` in task 5.
 ```cmd
 gcloud compute instances create vm-securehost --zone=$Zone --machine-type=e2-medium --network-interface=subnet=securenetwork-subnet,no-address --network-interface=subnet=default,no-address --tags=allow-rdp-traffic --image=projects/windows-cloud/global/images/windows-server-2016-dc-v20220513
+```
+### *You can now end your lab at task 5 and check if the green tick came beside the lab or not.*
+### *If you see the green tick, then congratulations! Your work here was successful.*
+
+* If you want to perform the `task 6` then you should have to run the below command.
+```
+gcloud compute instances create vm-securehost --zone=$Zone --machine-type=e2-medium --network-interface=subnet=securenetwork-subnet --network-interface=subnet=default,no-address --tags=allow-rdp-traffic --image=projects/windows-cloud/global/images/windows-server-2016-dc-v20220513
 ```
 
 ## Task 6: The vm-securehost is running Microsoft IIS web server software.
