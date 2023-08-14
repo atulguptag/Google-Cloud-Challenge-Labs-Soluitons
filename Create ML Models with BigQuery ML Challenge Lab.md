@@ -2,17 +2,18 @@
 
 ## Lab Link - [CLICK HERE](https://www.cloudskillsboost.google/focuses/14294?parent=catalog)
 
+## [YouTube Solution Link](https://youtu.be/tpiil_p4uKk)
 ## Task 1. Create a dataset to store your machine learning models
 
 ```cmd
 bq mk austin
 ```
 
-* Navigation Menu -> BigQuery.
+* *Navigation Menu* -> `BigQuery`.
 
 ## Task 2. Create a forecasting BigQuery machine learning model
 
-In BigQuery Console Query Editor
+Run in `BigQuery Console Query Editor`
 
 ```cmd
 CREATE OR REPLACE MODEL austin.location_model
