@@ -39,7 +39,7 @@ sudo nano /var/www/html/index.nginx-debian.html
 * Press `Ctrl+X, Y`, and then hit `ENTER`.
 
 ```
-sudo nano /var/www/html/index.nginx-debian.html
+cat /var/www/html/index.nginx-debian.html
 
 exit
 ```
