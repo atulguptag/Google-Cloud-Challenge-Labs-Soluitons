@@ -70,7 +70,7 @@ gcloud compute ssh --zone "$ZONE" "bastion"  --tunnel-through-iap --project $DEV
 * If prompted, type `y` & then hit `Enter Two Times`. You'll see you're successfully login to the bastion VM
 
 ```
-export JUICE_SHOP_VM_INTERNAL_IP=$(gcloud compute instances describe juice-shop --zone=$ZONE --format='get(networkInterfaces[0].networkIP)')
+export JUICE_SHOP_VM_INTERNAL_IP=$(gcloud compute instances describe juice-shop --format='get(networkInterfaces[0].networkIP)')
 
 gcloud compute ssh juice-shop --internal-ip
 ```
