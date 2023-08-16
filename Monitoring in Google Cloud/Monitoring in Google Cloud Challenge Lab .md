@@ -93,7 +93,9 @@ sudo service stackdriver-agent restart
 
 * Click on *Resource & Metric dropdown*. Disable the `Show only active resources & metrics`.
 
-* Type CPU load (1m) in filter by resource and metric name and click on VM instance > Cpu. Select CPU load (1m) and click Apply. Leave all other fields at the default value. Refresh the tab to view the graph.
+* Type `CPU load (1m)` in filter by *resource and metric name* and click on *VM instance* > *Cpu* > Select `CPU load (1m)` and click `Apply`. 
+
+* Leave all other fields at the default value. Refresh the tab to view the graph.
 
 * Add the second chart
 
