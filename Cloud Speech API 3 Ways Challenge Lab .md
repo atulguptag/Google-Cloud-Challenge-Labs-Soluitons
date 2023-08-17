@@ -66,7 +66,9 @@ cat > synthesize-text.json <<EOF
 }
 
 EOF
+```
 
+```
 curl -H "Authorization: Bearer "$(gcloud auth application-default print-access-token) \
   -H "Content-Type: application/json; charset=utf-8" \
   -d @synthesize-text.json "https://texttospeech.googleapis.com/v1/text:synthesize" \
@@ -108,7 +110,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
     decode_tts_output(args.input, args.output)
 EOF
+```
 
+```
 python tts_decode.py --input "$TASK_2_FILE_NAME" --output "synthesize-text-audio.mp3"
 ```
 
