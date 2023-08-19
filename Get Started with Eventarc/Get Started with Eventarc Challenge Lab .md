@@ -7,8 +7,10 @@ Run the following commands in the Cloud Shell Terminal.
 
 
 ```
-export REGION=us-east4
+export REGION=
+```
 
+```
 gcloud config set run/region "REGION"
 
 export SERVICE_NAME=pubsub-events
