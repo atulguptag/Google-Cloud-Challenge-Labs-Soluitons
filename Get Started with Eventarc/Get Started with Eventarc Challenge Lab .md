@@ -34,7 +34,7 @@ gcloud  pubsub subscriptions create --topic $DEVSHELL_PROJECT_ID-topic $DEVSHELL
 gcloud run deploy ${SERVICE_NAME} \
   --image ${IMAGE_NAME} \
   --allow-unauthenticated \
-  --max-instances=3
+  --max-instances=3 \
   --region=$REGION
 ```
 
