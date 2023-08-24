@@ -60,7 +60,8 @@ gcloud builds submit --tag gcr.io/${GOOGLE_CLOUD_PROJECT}/${PRODUCTS}:1.0.0 .
 ## Task 4. Deploy the new microservices
 
 
-```kubectl create deployment $ORDERS --image=gcr.io/${GOOGLE_CLOUD_PROJECT}/${ORDERS}:1.0.0
+```
+kubectl create deployment $ORDERS --image=gcr.io/${GOOGLE_CLOUD_PROJECT}/${ORDERS}:1.0.0
 
 kubectl expose deployment $ORDERS --type=LoadBalancer --port 80 --target-port 8081
 
