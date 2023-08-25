@@ -351,4 +351,4 @@ gcloud compute instance-groups managed rolling-action replace fancy-fe-mig \
   --max-unavailable=100%
 ```
 
-# Congratulation🎉! You are done with this lab.
+# Congratulation🎉! You're all done with this lab.
