@@ -85,3 +85,7 @@ kubectl get pods
 
 npm start
 ```
+
+* Press `Ctrl+C`.
+
+# Congratulation🎉! You're all done with this lab.
