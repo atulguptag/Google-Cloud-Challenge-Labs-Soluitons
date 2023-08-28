@@ -2,6 +2,7 @@
 
 ## Lab Link - [Click Here](https://www.cloudskillsboost.google/focuses/1230?parent=catalog)
 
+## [YouTube Solution Link](https://youtu.be/YUTiL0ojLy0)
 Run the following commands in the Cloud Shell Terminal.
 
 ```
@@ -15,9 +16,8 @@ export REGION2=
 ```
 export ZONE=
 ```
-![IMAGE](Region_Image.png)
 
-
+![IMAG](Region_Image.png)
 ## Task 1. Create custom mode VPC networks with firewall rules
 
 ```
