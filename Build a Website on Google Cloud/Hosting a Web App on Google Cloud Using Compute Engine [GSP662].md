@@ -28,6 +28,10 @@ cd ~/monolith-to-microservices
 ./setup.sh
 
 nvm install --lts
+
+cd microservices
+
+npm start
 ```
 
 ## Task 4. Create Compute Engine instances
@@ -79,6 +83,7 @@ EOF
 supervisorctl reread
 supervisorctl update
 ```
+
 * Find the text `[DEVSHELL_PROJECT_ID]` in the file and replace it with your `Project ID`.
 * Return back to your terminal and these commands.
 
@@ -92,7 +97,7 @@ gsutil -m cp -r monolith-to-microservices gs://fancy-store-$DEVSHELL_PROJECT_ID/
 
 gcloud compute instances create backend \
     --zone=$ZONE \
-    --machine-type=n1-standard-1 \
+    --machine-type=e2-standard-2 \
     --tags=backend \
    --metadata=startup-script-url=https://storage.googleapis.com/fancy-store-$DEVSHELL_PROJECT_ID/startup-script.sh
 
@@ -120,8 +125,8 @@ gsutil -m cp -r monolith-to-microservices gs://fancy-store-$DEVSHELL_PROJECT_ID/
 
 ```
 gcloud compute instances create frontend \
-    --zone=$ZONE
-    --machine-type=n1-standard-1 \
+    --zone=$ZONE \
+    --machine-type=e2-standard-2 \
     --tags=frontend \
     --metadata=startup-script-url=https://storage.googleapis.com/fancy-store-$DEVSHELL_PROJECT_ID/startup-script.sh
 
@@ -158,6 +163,7 @@ gcloud compute instance-templates list
 
 gcloud compute instances delete backend --zone=$ZONE
 ```
+* If asking, type and enter `y` when prompted.
 
 * 5.2
 
