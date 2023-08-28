@@ -2,6 +2,8 @@
 
 ## `Lab Link` - [*Click Here*](https://www.cloudskillsboost.google/focuses/10470?parent=catalog)
 
+## [YouTube Solution Link](https://youtu.be/PT4v_a-QK0g)
+
 ## Task 1. Create a GKE cluster
 
 ```
