@@ -32,7 +32,8 @@ curl -X POST --data-binary @values.json \
 
 * This will create and call the Bucket-2.
 
-```echo '{
+```
+echo '{
   "name": "'"$DEVSHELL_PROJECT_ID"'-bucket-2",
   "location": "us",
   "storageClass": "multi_regional"
