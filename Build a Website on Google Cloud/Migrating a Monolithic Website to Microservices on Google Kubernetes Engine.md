@@ -2,6 +2,7 @@
 
 ## `Lab Link` - [*Click Here*](https://www.cloudskillsboost.google/focuses/11953?parent=catalog)
 
+## [YouTube Solution Link](https://youtu.be/OT4jdnRzMMw)
 Run the following commands in the Cloud Shell Terminal.
 
 ## Task 1. Clone the source repository
