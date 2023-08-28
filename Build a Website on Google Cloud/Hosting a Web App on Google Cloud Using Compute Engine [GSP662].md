@@ -2,7 +2,7 @@
 
 ## `Lab Link` - [*CLICK HERE*](https://www.cloudskillsboost.google/focuses/11952?parent=catalog)
 
-
+## [YouTube Solution Link]()
 ### Run the following commands in the Cloud Shell 
 
 ```
@@ -31,6 +31,8 @@ nvm install --lts
 ```
 
 ## Task 4. Create Compute Engine instances
+
+* 4.1
 
 ```
 touch ~/monolith-to-microservices/startup-script.sh
@@ -102,6 +104,8 @@ gcloud compute instances list
 
 ### In the Code Editor, select View > `Toggle Hidden Files` in order to see the `.env file`.
 
+* 4.2
+
 ```cmd
 cd ~/monolith-to-microservices/react-app
 npm install && npm run-script build
@@ -111,6 +115,8 @@ rm -rf monolith-to-microservices/*/node_modules
 
 gsutil -m cp -r monolith-to-microservices gs://fancy-store-$DEVSHELL_PROJECT_ID/
 ```
+
+* 4.3
 
 ```
 gcloud compute instances create frontend \
@@ -133,6 +139,8 @@ gcloud compute instances list
 
 ## Task 5. Create managed instance groups
 
+* 5.1
+
 ```
 gcloud compute instances stop frontend --zone=$ZONE
 
@@ -150,6 +158,8 @@ gcloud compute instance-templates list
 
 gcloud compute instances delete backend --zone=$ZONE
 ```
+
+* 5.2
 
 ```
 gcloud compute instance-groups managed create fancy-fe-mig \
@@ -172,6 +182,7 @@ gcloud compute instance-groups set-named-ports fancy-be-mig \
     --zone=$ZONE \
     --named-ports orders:8081,products:8082
 ```
+* 5.3
 
 ```
 gcloud compute health-checks create http fancy-fe-hc \
@@ -189,6 +200,8 @@ gcloud compute health-checks create http fancy-be-hc \
     --timeout 10s \
     --unhealthy-threshold 3
 ```
+
+* 5.4
 
 ```
 gcloud compute firewall-rules create allow-health-check \
@@ -209,6 +222,8 @@ gcloud compute instance-groups managed update fancy-be-mig \
 
 ## Task 6. Create load balancers
 
+* 6.1
+
 ```
 gcloud compute http-health-checks create fancy-fe-frontend-hc \
   --request-path / \
@@ -222,6 +237,8 @@ gcloud compute http-health-checks create fancy-be-products-hc \
   --request-path /api/products \
   --port 8082
 ```
+
+* 6.2 
 
 ```
 gcloud compute backend-services create fancy-fe-frontend \
@@ -255,6 +272,8 @@ gcloud compute backend-services add-backend fancy-be-products \
   --global
 ```
 
+* 6.3 
+
 ```
 gcloud compute url-maps create fancy-map \
   --default-service fancy-fe-frontend
@@ -273,6 +292,8 @@ gcloud compute forwarding-rules create fancy-http-rule \
   --target-http-proxy fancy-proxy \
   --ports 80
 ```
+
+* 6.4 
 
 ```
 cd ~/monolith-to-microservices/react-app/
@@ -311,6 +332,8 @@ gcloud compute backend-services update fancy-fe-frontend \
 
 ## Task 8. Update the website
 
+* 8.1 
+
 ```
 gcloud compute instances set-machine-type frontend \
   --zone=$ZONE \
@@ -328,6 +351,8 @@ gcloud compute instance-groups managed rolling-action start-update fancy-fe-mig 
 watch -n 2 gcloud compute instance-groups managed list-instances fancy-fe-mig \
   --zone=$ZONE
 ```
+
+* 8.2
 
 ```
 cd ~/monolith-to-microservices/react-app/src/pages/Home
