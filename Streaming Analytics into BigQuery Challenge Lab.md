@@ -29,7 +29,7 @@ gsutil mb gs://$BUCKET_NAME/
 ## Task 2. Create a BigQuery dataset and table
 
 ```
-bq mk $BIGQUERY_DATASET_NAME --zone=$ZONE
+bq mk $BIGQUERY_DATASET_NAME
 
 bq mk \
 --schema data:string -t $BIGQUERY_DATASET_NAME.$TABLE_NAME
