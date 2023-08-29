@@ -7,28 +7,31 @@
 Run the following commands in the Cloud Shell Terminal.
 
 ```
+export BUCKET_NAME=
+
 export BIGQUERY_DATASET_NAME=
 
-export BUCKET_NAME=
+export TABLE_NAME=
 
 export TOPIC_NAME=
 
-export TABLE_NAME=
+export ZONE=
 ```
 
 ## Task 1. Create a Cloud Storage bucket
 
 ```
+gcloud services enable dataflow
+
 gsutil mb gs://$BUCKET_NAME/
 ```
 
 ## Task 2. Create a BigQuery dataset and table
 
 ```
-bq mk $BIGQUERY_DATASET_NAME
+bq mk $BIGQUERY_DATASET_NAME --zone=$ZONE
 
 bq mk \
---time_partitioning_field timestamp \
 --schema data:string -t $BIGQUERY_DATASET_NAME.$TABLE_NAME
 ```
 
