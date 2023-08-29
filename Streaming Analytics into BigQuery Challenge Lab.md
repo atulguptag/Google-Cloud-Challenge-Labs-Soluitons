@@ -14,15 +14,13 @@ export BIGQUERY_DATASET_NAME=
 export TABLE_NAME=
 
 export TOPIC_NAME=
-
-export ZONE=
 ```
+
+* Before performing the Tasks, please make sure to `Enable the Dataflow API`. If this API is already by default then first `disable` it and then `Enable it again`.
 
 ## Task 1. Create a Cloud Storage bucket
 
 ```
-gcloud services enable dataflow
-
 gsutil mb gs://$BUCKET_NAME/
 ```
 
