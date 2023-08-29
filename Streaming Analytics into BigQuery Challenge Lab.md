@@ -16,7 +16,7 @@ export TABLE_NAME=
 export TOPIC_NAME=
 ```
 
-* Before performing the Tasks, please make sure to `Enable the Dataflow API`. If this API is already by default then first `disable` it and then `Enable it again`.
+* Before performing the Tasks, please make sure to `Enable the Dataflow API`. If this API is already enabled by default then first `disable` it and then `Enable it again`.
 
 ## Task 1. Create a Cloud Storage bucket
 
