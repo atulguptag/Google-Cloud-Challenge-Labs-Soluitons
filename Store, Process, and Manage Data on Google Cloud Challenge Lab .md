@@ -2,6 +2,8 @@
 
 ## `Lab Link` - [Click Here](https://www.cloudskillsboost.google/focuses/60439?parent=catalog)
 
+## [YouTube Solution Link](https://youtu.be/QkG3dwAb3MU)
+
 Run the below commands in the Cloud Shell Terminal.
 
 ## Task 1. Create a bucket
