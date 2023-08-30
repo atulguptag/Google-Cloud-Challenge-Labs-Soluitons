@@ -1,6 +1,8 @@
 ## `Lab Name` - *Monitoring in Google Cloud: Challenge Lab [ARC115]*
 
-## `Lab Link` - [Click Here](https://www.cloudskillsboost.google/focuses/63855?parent=catalog)
+## `Lab Link` - [*Click Here*](https://www.cloudskillsboost.google/focuses/63855?parent=catalog)
+
+## [YouTube Solution Link](https://youtu.be/BJec_ax7JTA)
 
 Run the below task 1 commands in the Cloud Shell Teminal.
 
