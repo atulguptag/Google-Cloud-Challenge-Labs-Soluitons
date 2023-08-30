@@ -2,6 +2,7 @@
 
 ## Lab Link - [Click Here](https://www.cloudskillsboost.google/focuses/12379?parent=catalog)
 
+## [YouTube Solution Link](https://youtu.be/sK_gAUwzPQc)
 
 ## Task 1: Clean your training data
 
