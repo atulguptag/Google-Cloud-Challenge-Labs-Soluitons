@@ -2,7 +2,7 @@
 
 ## Lab Link - [Click Here](https://www.cloudskillsboost.google/focuses/1734?parent=catalog)
 
-## YouTube Solution Link - To be Uploaded Soon
+## [YouTube Solution Link](https://youtu.be/WCAxqZcU70g)
 
 
 ### Let's start with defining some variables given by Cloud Skill Boosts
