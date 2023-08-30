@@ -1,5 +1,5 @@
-## *Lab Name* - `Implement DevOps in Google Cloud: Challenge Lab [GSP330]`
-## *Lab Link* - [Click Here](https://www.cloudskillsboost.google/focuses/13287?parent=catalog)
+## `Lab Name` - *Implement DevOps in Google Cloud: Challenge Lab [GSP330]*
+## `Lab Link` - [*Click Here*](https://www.cloudskillsboost.google/focuses/13287?parent=catalog)
 
 Run the following commands in the Cloud Shell Terminal
 
