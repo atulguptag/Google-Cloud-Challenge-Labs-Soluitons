@@ -1,7 +1,8 @@
 ## `Lab Name` - *Get Started with Eventarc: Challenge Lab [ARC118]*
 
-## `Lab Link` - [Click Here](https://www.cloudskillsboost.google/focuses/63244?parent=catalog)
+## `Lab Link` - [*Click Here*](https://www.cloudskillsboost.google/focuses/63244?parent=catalog)
 
+## [YouTube Solution Link](https://youtu.be/7UUk5Zqf6Yk)
 
 Run the following commands in the Cloud Shell Terminal.
 
