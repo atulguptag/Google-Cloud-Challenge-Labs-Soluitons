@@ -1,6 +1,6 @@
-## *Lab Name* - *Google Cloud Essential Skills: Challenge Lab [GSP101]*
+## `Lab Name` - *Google Cloud Essential Skills: Challenge Lab [GSP101]*
 
-## Lab Link - [Click Here](https://www.cloudskillsboost.google/focuses/1734?parent=catalog)
+## `Lab Link` - [*Click Here*](https://www.cloudskillsboost.google/focuses/1734?parent=catalog)
 
 ## [YouTube Solution Link](https://youtu.be/WCAxqZcU70g)
 
