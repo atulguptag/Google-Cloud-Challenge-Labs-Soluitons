@@ -1,5 +1,5 @@
-## Lab Name - Serverless Firebase Development: Challenge Lab
-## Lab Link - [CLICH HERE](https://www.cloudskillsboost.google/focuses/14677?parent=catalog)
+## `Lab Name` - *Serverless Firebase Development: Challenge Lab [GSP344]*
+## `Lab Link` - [*Click Here*](https://www.cloudskillsboost.google/focuses/14677?parent=catalog)
 
 ## [YouTube Solution Link](https://www.youtube.com/watch?v=-TefmOhEEPA)
 ### Start by executing the following commands:
