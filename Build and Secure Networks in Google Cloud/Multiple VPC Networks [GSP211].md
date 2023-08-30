@@ -16,8 +16,8 @@ export REGION2=
 ```
 export ZONE=
 ```
+<img src="Region_Image.png" alt="Region Image">
 
-![IMAG](Region_Image.png)
 ## Task 1. Create custom mode VPC networks with firewall rules
 
 ```
