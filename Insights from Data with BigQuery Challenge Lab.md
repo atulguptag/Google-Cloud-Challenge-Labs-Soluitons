@@ -1,6 +1,10 @@
-## Lab Name - Insights from Data with BigQuery: Challenge Lab
-## Lab Link - https://www.cloudskillsboost.google/focuses/11988?parent=catalog
+## `Lab Name` - *Insights from Data with BigQuery: Challenge Lab [GSP787]*
 
+## `Lab Link` - [*Click Here*](https://www.cloudskillsboost.google/focuses/11988?parent=catalog)
+
+## [YouTube Solution Link](https://youtu.be/yCaiNwnAvJU)
+
+* At first, create a Public Dataset.
 
 Open Public Dataset.
 
