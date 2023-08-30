@@ -9,6 +9,11 @@ Run the below commands in the Cloud Shell Terminal.
 ```
 export REGION=
 ```
+
+```
+export MESSAGE_BODY=
+```
+
 * You can find the REGION/LOCATION in the Task 2 (On the Lab Page).
 
 ## Task 1. Set up Cloud Pub/Sub
@@ -24,7 +29,7 @@ gcloud pubsub subscriptions create $DEVSHELL_PROJECT_ID-cron-sub --topic $DEVSHE
 ```
 gcloud services enable cloudscheduler.googleapis.com
 
-gcloud scheduler jobs create pubsub $DEVSHELL_PROJECT_ID-cron-scheduler-job --schedule="* * * * *" --location $REGION --topic $DEVSHELL_PROJECT_ID-cron-topic --message-body="hello cron!"
+gcloud scheduler jobs create pubsub $DEVSHELL_PROJECT_ID-cron-scheduler-job --schedule="* * * * *" --location $REGION --topic $DEVSHELL_PROJECT_ID-cron-topic --message-body="$MESSAGE_BODY"
 ```
 
 ## Task 3. Verify the results in Cloud Pub/Sub
