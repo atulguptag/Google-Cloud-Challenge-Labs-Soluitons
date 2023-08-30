@@ -1,6 +1,6 @@
 ## `Lab Name` - *App Engine: 3 Ways: Challenge Lab [ARC112]*
 
-## Lab Link - [Click Here](https://www.cloudskillsboost.google/focuses/63241?parent=catalog)
+## `Lab Link` - [*Click Here*](https://www.cloudskillsboost.google/focuses/63241?parent=catalog)
 
 ## [YouTube Video Link](https://youtu.be/GpTpeUGBTsU)
 
