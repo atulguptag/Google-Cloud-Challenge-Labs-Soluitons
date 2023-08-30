@@ -1,6 +1,6 @@
-## Lab Name - Create ML Models with BigQuery ML: Challenge Lab
+## `Lab Name` - *Create ML Models with BigQuery ML: Challenge Lab [GSP341]*
 
-## Lab Link - [CLICK HERE](https://www.cloudskillsboost.google/focuses/14294?parent=catalog)
+## `Lab Link` - [*Click Here*](https://www.cloudskillsboost.google/focuses/14294?parent=catalog)
 
 ## [YouTube Solution Link](https://youtu.be/tpiil_p4uKk)
 ## Task 1. Create a dataset to store your machine learning models
