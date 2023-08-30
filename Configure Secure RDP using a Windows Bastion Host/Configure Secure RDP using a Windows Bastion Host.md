@@ -1,6 +1,6 @@
-## Lab Name - Configure Secure RDP using a Windows Bastion Host [GSP303]
+## `Lab Name` - *Configure Secure RDP using a Windows Bastion Host [GSP303]*
 
-## Lab Link - [Click Here](https://www.cloudskillsboost.google/focuses/1737?parent=catalog)
+## `Lab Link` - [*Click Here*](https://www.cloudskillsboost.google/focuses/1737?parent=catalog)
 
 ## [YouTube Solution Link](https://www.youtube.com/watch?v=_mBh_nPEdBM)
 ### Run the below commands in the Cloud Shell Terminal.
@@ -65,11 +65,11 @@ If asking choose y/n then press "y", and then hit Enter.
 
 * Click on `Add roles and features`.
 
-![Alt text](/Configure%20Secure%20RDP%20using%20a%20Windows%20Bastion%20Host/img1.png)
-![Alt text](/Configure%20Secure%20RDP%20using%20a%20Windows%20Bastion%20Host/img2.png)
-![Alt text](/Configure%20Secure%20RDP%20using%20a%20Windows%20Bastion%20Host/img3.png)
-![Alt text](/Configure%20Secure%20RDP%20using%20a%20Windows%20Bastion%20Host/img4.png)
-![Alt text](/Configure%20Secure%20RDP%20using%20a%20Windows%20Bastion%20Host/img5.png)
+<img src="img1.png" alt="Image1">
+<img src="img2.png" alt="Image2">
+<img src="img3.png" alt="Image3">
+<img src="img4.png" alt="Image4">
+<img src="img5.png" alt="Image5">
 
 
 * Click *next* > *next* > *Install*
