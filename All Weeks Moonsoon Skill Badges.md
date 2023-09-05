@@ -1,8 +1,8 @@
-**Official Arcade Website** - [Click Here](https://go.qwiklabs.com/arcade/)
+## **Official Arcade Website** - [Click Here](https://go.qwiklabs.com/arcade/)
 
-**Arcade Syllabus Link** - [Click Here](https://rsvp.withgoogle.com/events/arcade-facilitator/syllabus)
+## **Arcade Syllabus Link** - [Click Here](https://rsvp.withgoogle.com/events/arcade-facilitator/syllabus)
 
-* **WEEK 1 Moonsoon Skill Badges**
+## *WEEK 1 Moonsoon Skill Badges*
 
 ### Skill Badge 1 - Create and Manage Cloud Resources
 
@@ -41,7 +41,7 @@ Quest Link - [Click Here](https://www.cloudskillsboost.google/quests/324)
 
 Solution Link - [Click Here]
 
-* **WEEK 2 Moonsoon Skill Badges**
+## *WEEK 2 Moonsoon Skill Badges*
 
 
 ### Skill Badge 1 - Set Up and Configure a Cloud Environment in Google Cloud
@@ -81,7 +81,7 @@ Quest Link - [Click Here](https://www.cloudskillsboost.google/quests/305)
 Solution Link - [Click Here](https://www.youtube.com/playlist?list=PLHfVKuKwHnWMGjggiFrQHRUXy3cLI3WQc)
 
 
-* **WEEK 3 Moonsoon Skill Badges**
+## *WEEK 3 Moonsoon Skill Badges*
 
 
 ### Skill Badge 1 - Store, Process, and Manage Data in Google Cloud Console
@@ -121,7 +121,7 @@ Quest Link - [Click Here](https://www.cloudskillsboost.google/quests/301)
 Solution Link - [Click Here](https://www.youtube.com/playlist?list=PLVyfLG0N2WQwx0hbACJLszOktqyMY0QIp)
 
 
-* **WEEK 4 Moonsoon Skill Badges**
+## *WEEK 4 Moonsoon Skill Badges*
 
 
 ### Skill Badge 1 - Automating Infrastructure on Google Cloud with Terraform
@@ -161,7 +161,7 @@ Quest Link - [Click Here](https://www.cloudskillsboost.google/quests/285)
 Solution Link - [Click Here](https://www.youtube.com/playlist?list=PLVyfLG0N2WQwA7Jfdz_5Jz_X02Fyu-nug)
 
 
-* **WEEK 5 Moonsoon Skill Badges**
+## *WEEK 5 Moonsoon Skill Badges*
 
 
 ### Skill Badge 1 - Serverless Firebase Development
