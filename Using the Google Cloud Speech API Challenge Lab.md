@@ -16,13 +16,15 @@ export API_KEY=
 
 ### Define variables for file names.
 
-TASK_2_REQUEST_FILE=""
+```
+TASK_2_REQUEST_FILE=
 
-TASK_2_RESPONSE_FILE=""
+TASK_2_RESPONSE_FILE=
 
-TASK_3_REQUEST_FILE=""
+TASK_3_REQUEST_FILE=
 
-TASK_3_RESPONSE_FILE=""
+TASK_3_RESPONSE_FILE=
+```
 
 ## Task 2. Transcribe speech to English text
 
