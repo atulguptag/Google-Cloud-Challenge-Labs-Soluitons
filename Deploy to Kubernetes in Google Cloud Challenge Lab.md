@@ -2,7 +2,7 @@
 
 ## `Lab Link` - [*Click Here*](https://www.cloudskillsboost.google/focuses/10457?parent=catalog)
 
-<!-- ## [YouTube Solution Link]() -->
+## [YouTube Solution Link](https://youtu.be/WrT2V60syiI?si=gmiD_HNr1e6cFVBf)
 
 
 ## Task 1. Create a Docker image and store the Dockerfile
