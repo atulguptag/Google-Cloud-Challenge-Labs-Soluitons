@@ -8,7 +8,11 @@ Run the below commands in the SSH of your VM-Instance.
 
 ## Task 1. Create an API key
 
-* *Navigation Menu* > *APIs and Services* > *Credentials* > Click `+Create Credentials` > Choose `API`.
+* *Navigation Menu* > *APIs and Services* > *Credentials* > Click `+Create Credentials` > Choose `API KEY`.
+
+```
+gcloud compute ssh lab-vm --zone=<YOUR_VM_INSTANCE_ZONE>
+```
 
 ```
 export API_KEY=
