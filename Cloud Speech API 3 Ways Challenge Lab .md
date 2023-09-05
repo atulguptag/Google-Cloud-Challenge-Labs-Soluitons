@@ -192,7 +192,7 @@ else
 fi
 ```
 
-* URL- decode the sentence.
+* URL - decode the sentence.
 
 ```
 decoded_sentence=$(python -c "import urllib.parse; print(urllib.parse.unquote('$TASK_5_SENTENCE'))")
