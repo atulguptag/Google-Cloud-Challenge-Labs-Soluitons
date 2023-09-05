@@ -24,9 +24,9 @@ gcloud services enable \
 ```
 export REGION=
 
-export FUNCTION_NAME=
-
 export HTTP_FUNCTION=
+
+export FUNCTION_NAME=
 
 export BUCKET="gs://$DEVSHELL_PROJECT_ID"
 ```
