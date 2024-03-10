@@ -3,25 +3,25 @@
 
 Run the following commands in the Cloud Shell Terminal
 
-* Put your `Qwiklabs Student Mail ID` here.
+* Put your `Qwiklabs USERNAME ID` here.
 ```
 export EMAIL=
 ```
-
-## *--PLEASE DO NOT CHANGE ANYTHING BELOW--*
 
 * Storing values in a variable.
 ```
 export CLUSTER_NAME=hello-cluster
 
-export ZONE=us-central1-b
+export ZONE=<Replace With Your Lab Zone>
 
-export REGION=us-central1
+export REGION=<Replace With Your Lab Region>
 
 export REPO=my-repository
 
 export PROJECT_ID=$(gcloud config get-value project)
 ```
+
+## Task 1. Create the lab resources
 
 * Enabling Some APIs and adding iam-policy.
 ```
@@ -45,12 +45,14 @@ gcloud artifacts repositories create $REPO \
 
 * Creating cluster with the following configuration.
 ```
-gcloud beta container --project "$PROJECT_ID" clusters create "$CLUSTER_NAME" --zone "$ZONE" --no-enable-basic-auth --cluster-version latest --release-channel "regular" --machine-type "e2-medium" --image-type "COS_CONTAINERD" --disk-type "pd-balanced" --disk-size "100" --metadata disable-legacy-endpoints=true  --logging=SYSTEM,WORKLOAD --monitoring=SYSTEM --enable-ip-alias --network "projects/$PROJECT_ID/global/networks/default" --subnetwork "projects/$PROJECT_ID/regions/$REGION/subnetworks/default" --no-enable-intra-node-visibility --default-max-pods-per-node "110" --enable-autoscaling --min-nodes "2" --max-nodes "6" --location-policy "BALANCED" --no-enable-master-authorized-networks --addons HorizontalPodAutoscaling,HttpLoadBalancing,GcePersistentDiskCsiDriver --enable-autoupgrade --enable-autorepair --max-surge-upgrade 1 --max-unavailable-upgrade 0 --enable-shielded-nodes --node-locations "$ZONE"
+gcloud beta container --project "$PROJECT_ID" clusters create "$CLUSTER_NAME" --zone "$ZONE" --machine-type "e2-medium" --subnetwork "projects/$PROJECT_ID/regions/$REGION/subnetworks/default" --enable-autoscaling --min-nodes "2" --max-nodes "6"
 
 kubectl create namespace prod	
 
 kubectl create namespace dev
 ```
+
+## Task 2. Create a repository in Cloud Source Repositories
 
 * Creating source repos using gcloud command.
 ```
@@ -82,12 +84,18 @@ git checkout dev
 git push -u origin dev
 ```
 
+## Task 3. Create the Cloud Build Triggers
+
 * Creating builds triggers
 ```
 gcloud builds triggers create cloud-source-repositories --name="sample-app-prod-deploy" --repo="sample-app" --branch-pattern="^master$" --build-config="cloudbuild.yaml"
 
 gcloud builds triggers create cloud-source-repositories --name="sample-app-dev-deploy" --repo="sample-app" --branch-pattern="^dev$" --build-config="cloudbuild-dev.yaml"
+```
 
+## Task 4. Deploy the first versions of the application
+
+```
 COMMIT_ID="$(git rev-parse --short=7 HEAD)"
 
 gcloud builds submit --tag="${REGION}-docker.pkg.dev/${PROJECT_ID}/$REPO/hello-cloudbuild:${COMMIT_ID}" .
@@ -121,6 +129,8 @@ git push -u origin master
 
 git checkout dev
 ```
+
+## Task 5. Deploy the second versions of the application
 
 * Creating `main.go` file.
 ```
@@ -265,8 +275,8 @@ git commit -m "Subscribe to Atul Gupta"
 git push -u origin master
 ```
 
+## Task 6. Roll back the production deployment
 
-## FOR THE LAST TASK : 
 * Go to *CLOUD BUILD* > `HISTORY`
 * Click `SECOND FAILED ONE(dev)` > CLICK `RETRY`
 
