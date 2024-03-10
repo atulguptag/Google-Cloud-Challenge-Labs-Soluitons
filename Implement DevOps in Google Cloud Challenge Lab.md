@@ -45,7 +45,7 @@ gcloud artifacts repositories create $REPO \
 
 * Creating cluster with the following configuration.
 ```
-gcloud beta container --project "$PROJECT_ID" clusters create "$CLUSTER_NAME" --zone "$ZONE" --machine-type "e2-medium" --subnetwork "projects/$PROJECT_ID/regions/$REGION/subnetworks/default" --enable-autoscaling --min-nodes "2" --max-nodes "6"
+gcloud beta container --project "$PROJECT_ID" clusters create "$CLUSTER_NAME" --zone "$ZONE" --cluster-version latest --release-channel "regular" --machine-type "e2-medium" --subnetwork "projects/$PROJECT_ID/regions/$REGION/subnetworks/default" --enable-autoscaling --min-nodes "2" --max-nodes "6"
 
 kubectl create namespace prod	
 
