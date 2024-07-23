@@ -77,7 +77,7 @@ EOF
 ```
 gcloud functions deploy $FUNCTION_NAME \
   --gen2 \
-  --runtime nodejs16 \
+  --runtime nodejs20 \
   --entry-point $FUNCTION_NAME \
   --source . \
   --region $REGION \
@@ -85,6 +85,8 @@ gcloud functions deploy $FUNCTION_NAME \
   --trigger-location $REGION \
   --max-instances 2
 ```
+
+`Note: If you get permissions error, please wait a few minutes and try the deployment again. It takes a few minutes for the APIs to be enabled.`
 
 ## Task 3. Create and deploy a HTTP function (2nd gen) with minimum instances
 
@@ -119,7 +121,7 @@ EOF
 ```
 gcloud functions deploy $HTTP_FUNCTION \
   --gen2 \
-  --runtime nodejs16 \
+  --runtime nodejs20 \
   --entry-point $HTTP_FUNCTION \
   --source . \
   --region $REGION \
