@@ -11,7 +11,7 @@ Run the below commands in the SSH of your VM-Instance.
 * *Navigation Menu* > *APIs and Services* > *Credentials* > Click `+Create Credentials` > Choose `API KEY`.
 
 ```
-gcloud compute ssh lab-vm --zone=<YOUR_VM_INSTANCE_ZONE>
+gcloud compute ssh lab-vm --zone=<INSTANCE_ZONE>
 ```
 
 ```
