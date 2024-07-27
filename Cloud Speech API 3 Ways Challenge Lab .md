@@ -17,28 +17,25 @@ In this task you have to create an API KEY.
 Now, run the below commands in the Cloud Shell Terminal.
 
 ```
-gcloud compute ssh lab-vm --zone=<VM_INSTANCE_ZONE>
+gcloud compute ssh lab-vm --zone=<INSTANCE_ZONE>
 ```
-
+ 
 ```
 export API_KEY=
-``` 
-* `NOTE`: If the names are different in your lab then simmply change it.
 
-```
-TASK_2_FILE_NAME=synthesize-text.txt
+TASK_2_FILE_NAME=""
 
-TASK_3_REQUEST_FILE=speech_request.json
+TASK_3_REQUEST_FILE=""
 
-TASK_3_RESPONSE_FILE=response.json
+TASK_3_RESPONSE_FILE=""
 
-TASK_4_SENTENCE=これは日本語です。
+TASK_4_SENTENCE=""
 
-TASK_4_FILE_NAME=translation_response.txt
+TASK_4_FILE_NAME=""
 
-TASK_5_SENTENCE=Este%é%japonês.
+TASK_5_SENTENCE=""
 
-TASK_5_FILE_NAME=detection_response.txt
+TASK_5_FILE_NAME=""
 ```
 
 ```
