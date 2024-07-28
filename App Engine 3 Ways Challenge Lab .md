@@ -39,7 +39,7 @@ gcloud app browse
 
 ## Task 4 - Deploy updates to your application
 
-* Here, in the `index.php`, change the code to *Hello, World!* to `Goodbye World!`.
+* Here, in the `index.php`, change the code to *Hello, World!* to `Whatever the message is in the Task 4`.
 * Now, after editing the code, save and exit from the editor by pressing the `Ctrl+X, Y`, and then hit `Enter`.
 
 ```
