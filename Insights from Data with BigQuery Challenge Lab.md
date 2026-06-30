@@ -58,20 +58,32 @@ WHERE country_name="Italy" AND date BETWEEN "2020-04-01" AND "2020-04-30"
 ```
 
 
-## Task 5.Identifying specific day
+## Task 5. Identifying specific day
+
+**Correction Note:** The original solution provided in the official documentation lacks the necessary aggregation by date. Since the `covid19_open_data` dataset contains records at both the national and provincial/regional levels, querying without grouping causes false positives by mixing the metrics. 
+
+The corrected solution below calculates the true daily national total before evaluating the threshold:
 
 ```cmd
 SELECT
- date
-FROM
-  `bigquery-public-data.covid19_open_data.covid19_open_data`
+  date
+FROM (
+  SELECT
+    date,
+    SUM(cumulative_deceased) AS total_deaths
+  FROM
+    `bigquery-public-data.covid19_open_data.covid19_open_data`
+  WHERE
+    country_name = 'Italy'
+  GROUP BY
+    date
+)
 WHERE
- country_name = 'Italy'
- AND cumulative_deceased > Enter_Total_Number
-ORDER BY date
-LIMIT 1
+  total_deaths > Enter_Total_Number
+ORDER BY
+  date ASC
+LIMIT 1;
 ```
-
 
 ## Task 6: Finding days with zero net new cases
 
